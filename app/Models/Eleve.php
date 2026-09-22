@@ -11,7 +11,7 @@ class Eleve extends Model
         'matricule',
         'nom_eleve',
         'prenom_eleve',
-        'date_naiss_eleve',
+        
         'genre_eleve',
         'nom_parent',
         'contact_parent',

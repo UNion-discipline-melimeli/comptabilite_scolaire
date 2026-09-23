@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\AnneeScolaire;
+//use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class AnneeScolaireSeeder extends Seeder
@@ -12,6 +13,11 @@ class AnneeScolaireSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        AnneeScolaire::create([
+            'libelle' => '2026-2027',
+            'date_debut' => '2026-09-01',
+            'date_fin' => '2027-07-31',
+            'active' => true,
+        ]);
     }
 }
